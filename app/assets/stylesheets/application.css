@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    padding: ;
+}
+.container {
+    max-width: 80% !important;
+}
+.dropdown.open {
+    position: initial;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+}
+.btn:focus, .btn:active {
+  box-shadow: none !important;
+}
