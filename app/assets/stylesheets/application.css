@@ -30,3 +30,7 @@ body {
 .btn:focus, .btn:active {
   box-shadow: none !important;
 }
+
+.form-container {
+    width:  30%;
+}
