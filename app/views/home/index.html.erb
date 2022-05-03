@@ -7,9 +7,7 @@
 	<body>
 		<div class='container'>
 			<main>
-				<% if current_user %>
-					<p>you are a <%= current_user.role %></p>
-				<% end %>
+				<%= render partial: 'shared/cards' %>
 			</main>
 			<footer>
 				
