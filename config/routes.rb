@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
   resources :users
-  resources :movies
+  resources :movies do
+    resources :ratings
+  end
   # get 'home/index'
 
   root 'movies#index'
