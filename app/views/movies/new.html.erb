@@ -1,0 +1,13 @@
+<div class="container">
+  <% if current_user && current_user.admin? %>
+    <h1>New movie</h1>
+
+    <%= render "form", movie: @movie %>
+
+    <br>
+
+    <div>
+      <%= link_to "Back to movies", movies_path %>
+    </div>
+  <% end %>
+</div>

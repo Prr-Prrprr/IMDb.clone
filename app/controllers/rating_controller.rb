@@ -6,7 +6,7 @@ class RatingController < ApplicationController
 	end
 
 	def rate
-		@rating = Raating.new(rating_params)
+		@rating = Rating.new(rating_params)
 
 		if @rating.save
 			redirect_to root_path(@movie)
