@@ -24,6 +24,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_08_222603) do
 
   create_table "movies", force: :cascade do |t|
     t.string "name"
+    t.string "text"
+    t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.float "average_rating", default: 0.0, null: false

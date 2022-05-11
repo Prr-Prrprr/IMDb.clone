@@ -1,6 +1,9 @@
 <div id="<%= dom_id movie %>" class="container">
   <h2>
-    <%= movie.name %>
+    <p><%= movie.name %></p>
+    <span class="bi-star-fill"><%= movie.average_rating %></span>
+    <p><h4><b>Category: <%= movie.category %></h4></p><br>
+    <p><h6><%= movie.text %></h6></p><br>
   </h2>
 
 </div>
